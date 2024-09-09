@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>компания</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(''); /* Фоновое изображение */
+            background-size: cover; /* Растянуть на весь экран */
+            background-position: center;
+            background-attachment: fixed; /* Фон остаётся на месте при прокрутке */
+        }
+
+        /* Верхний отступ */
+        .top-space {
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000080; /* Синий цвет */
+        }
+
+        /* Логотип */
+        .logo {
+            max-height: 200px;
+            margin: 0; /* Убедитесь, что нет дополнительных отступов */
+        }
+
+        /* Полоса с ячейками */
+        .row {
+            display: flex;
+            justify-content: space-between;
+            background-color: #A9A9A9;
+            padding: 20px;
+            margin: 0; /* Убедитесь, что нет дополнительных отступов */
+        }
+
+        /* Ячейки */
+        .cell {
+            flex-grow: 1;
+            height: 50px;
+            background-color: #A9A9A9;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Ячейка при наведении мышью */
+        .cell:hover {
+            background-color: #45a049;
+        }
+
+        /* Контейнер для текста и фото */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Текст */
+        .text-content {
+            flex: 1;
+            padding-right: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон для текста */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Фото справа */
+        .image-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-content img {
+            max-width: 250%;
+            border-radius: 10px;
+        }
+
+        .text-content p {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Верхний отступ -->
+    <div class="top-space">
+        <img src="logo-removebg-preview.png" alt="Логотип" class="logo">
+    </div>
+
+    <!-- Полоса с ячейками -->
+    <div class="row">
+        <a href="компания.html" class="cell"><h2>О компании</h2></a>
+        <a href="продукты.html" class="cell"><h2>Продукты</h2></a>
+        <a href="контакты.html" class="cell"><h2>Контакты</h2></a>
+    </div>
+
+    <!-- Контент: текст слева, фото справа -->
+    <div class="content">
+        <!-- Текст слева -->
+        <div class="text-content">
+            <p><h2> ООО «Спортмастер» </h2></p>
+            <p>Наши стандартные магазины, в которых есть все для спорта и активного отдыха: от самых простых аксессуаров до технологичного снаряжения.</p>
+            <p><h2>Интернет-магазин спортивных товаров Sportmaster</h2></p>
+            <p>Sportmaster — международная сеть магазинов качественного инвентаря для фитнеса, летних и зимних видов спорта, а также товаров для активного отдыха. В оффлайн точках продаж и на нашем сайте Вы найдете тренажеры, спортивную одежду и обувь на любой сезон. Отдельное внимание мы уделяем товарам для детей, предлагая форму, обувь и снаряды для уроков физкультуры, а также самостоятельных занятий спортом. Широкий выбор спорттоваров в сети Sportmaster в Казахстане делает спорт доступным для всех!</p>
+            <p><h2>О компании</h2></p>
+            <p>Sportmaster — это доступ в мир спорта с рекордным ассортиментом! Это настоящий бренд-эксперт в спорте и активном отдыхе, который вдохновляет своих покупателей, мотивирует их и помогает регулярно заниматься спортом, чтобы радоваться жизни и менять себя к лучшему день за днем!</p>
+        </div>
+
+        <!-- Фото справа -->
+        <div class="image-content">
+            <img src="phonk.jpg" alt="Фото магазина">
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>компания</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg'); 
+            background-size: cover; 
+            background-position: center;
+        }
+
+        /* Верхний отступ */
+        .top-space {
+            height: 150px; /* Уменьшено с 100px */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000080; /* Синий цвет */
+        }
+
+        /* Логотип */
+        .logo {
+            max-height: 200px; /* Уменьшено с 100px */
+            margin: 0;
+        }
+
+        /* Полоса с ячейками */
+        .row {
+            display: flex;
+            justify-content: space-between;
+            background-color: #A9A9A9;
+            padding: 20px; /* Уменьшено с 20px */
+            margin: 0; 
+        }
+
+        /* Ячейки */
+        .cell {
+            flex-grow: 1;
+            height: 50px; /* Уменьшено с 50px */
+            background-color: #A9A9A9;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            text-decoration: none;
+            margin: 0 5px; /* Уменьшен промежуток */
+            font-size: 16px; /* Уменьшен размер текста */
+        }
+
+        /* Ячейка при наведении мышью */
+        .cell:hover {
+            background-color: #45a049;
+        }
+
+        /* Контейнер для текста под полосой */
+        .text-container {
+            padding: 20px;
+            text-align: left; /* Выровнено по левой стороне */
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px; /* Добавлен отступ */
+        }
+
+        .text-container p {
+            font-size: 18px; /* Уменьшено с 18px */
+            color: #333;
+            margin: 10px 0;
+        }
+
+       
+        /* Контейнер для карты */
+        .map-container {
+            margin: 20px;
+            text-align: center; /* Центрирование карты */
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px; /* Прямоугольная карта */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Верхний отступ -->
+    <div class="top-space">
+        <img src="logo-removebg-preview.png" alt="Логотип" class="logo">
+    </div>
+
+    <!-- Полоса с ячейками -->
+    <div class="row">
+        <a href="компания.html" class="cell"><h2>О компании</h2></a>
+        <a href="продукты.html" class="cell"><h2>Продукты</h2></a>
+        <a href="контакты.html" class="cell"><h2>Контакты</h2></a>
+    </div>
+
+    <!-- Текст под полосой с ячейками -->
+    <div class="text-container">
+        <h2>ООО «Спортмастер«</h2>
+        <p>г.Актобе ул.Пушкина дом Колотушкина</p>
+        <h2>Тел.</h2>
+        <p>+7(700) 456 20 78</p>
+		<p>+7(760) 132 49 65</p>
+		<p>+7(123) 478 68 24</p>
+		<br>
+        <h2>E-mail</h2>
+		<p>kolotyshkina@mail.ru</p>
+      
+    </div>
+
+    <!-- Прямоугольная карта 2ГИС -->
+    <div class="map-container">
+        <iframe
+            src="https://widgets.2gis.com/widget?type=firmsonmap&link=https://2gis.kz/aktobe/firm/70000001032286379/57.170445%2C50.287693?m=57.172632%2C50.288552%2F17.57">
+        </iframe>
+    </div>
+
+</body>
+</html>
